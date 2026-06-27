@@ -1,0 +1,63 @@
+.retro-nav {
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    padding:10px;
+
+    background:#c0c0c0;
+
+    border-top:2px solid white;
+
+    border-left:2px solid white;
+
+    border-right:2px solid #555;
+
+    border-bottom:2px solid #555;
+
+}
+
+.retro-nav a{
+
+    text-decoration:none;
+
+    color:black;
+
+    font-weight:bold;
+
+    padding:8px 18px;
+
+    background:#d4d0c8;
+
+    border-top:2px solid white;
+
+    border-left:2px solid white;
+
+    border-right:2px solid #666;
+
+    border-bottom:2px solid #666;
+
+}
+
+.retro-nav a:hover{
+
+    background:#efefef;
+
+}
+
+.retro-nav a:active{
+
+    border-top:2px solid #666;
+
+    border-left:2px solid #666;
+
+    border-right:2px solid white;
+
+    border-bottom:2px solid white;
+
+}

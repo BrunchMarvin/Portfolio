@@ -1,41 +1,67 @@
-import React from 'react';
-import './Home.css';
+import "./Home.css";
+import StatusWidget from "../components/widgets/StatusWidget";
+import RetroWindow from "../components/RetroWindow/RetroWindow";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <div className="home">
-      <section className="hero">
-        <div className="container">
-          <h1>Professional Editing Services</h1>
-          <p className="tagline">Elevate your writing with expert editing expertise</p>
-          <button className="cta-button">View My Work</button>
-        </div>
-      </section>
+    <div className="home-grid">
 
-      <section className="intro">
-        <div className="container">
-          <h2>About Me</h2>
-          <p>
-            I'm an experienced editor with a passion for refining written content. 
-            With years of expertise in various editing styles, I help authors, publishers, 
-            and businesses polish their writing to perfection.
-          </p>
-          <div className="stats">
-            <div className="stat">
-              <h3>500+</h3>
-              <p>Projects Completed</p>
-            </div>
-            <div className="stat">
-              <h3>10+</h3>
-              <p>Years Experience</p>
-            </div>
-            <div className="stat">
-              <h3>98%</h3>
-              <p>Client Satisfaction</p>
-            </div>
-          </div>
+      <RetroWindow title="Navigation">
+
+    <div className="sidebar-buttons">
+
+        <Link to="/" className="sidebar-button">
+            🏠 Home
+        </Link>
+
+        <Link to="/portfolio" className="sidebar-button">
+            🎬 Portfolio
+        </Link>
+
+        <Link to="/services" className="sidebar-button">
+            💼 Services
+        </Link>
+
+        <Link to="/Archive" className="sidebar-button">
+            📁 Archive
+        </Link>
+
+        <Link to="/contact" className="sidebar-button">
+            📧 Contact
+        </Link>
+
+    </div>
+
+</RetroWindow>
+
+      <RetroWindow title="Welcome">
+        <h2>いらっしゃいませ!</h2>
+
+        <p>
+          Welcome to my personal editing portfolio! I'm Bralf, a passionate video editor and storyteller.
+        </p>
+
+        <p>
+          This website is my digital archive, showcasing editing projects,
+          motion graphics, and creative experiments.
+        </p>
+
+        <p>
+          Thanks for stopping by!
+        </p>
+      </RetroWindow>
+
+      <RetroWindow title="System Status">
+       <StatusWidget />
+      </RetroWindow>
+
+      <RetroWindow title="Featured Project">
+        <div className="video-placeholder">
+          📼 Featured video coming soon...
         </div>
-      </section>
+      </RetroWindow>
+
     </div>
   );
 }

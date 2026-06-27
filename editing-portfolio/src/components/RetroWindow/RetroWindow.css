@@ -1,43 +1,89 @@
-.window{
+.retro-window {
 
-border:2px solid black;
+    background: #c0c0c0;
 
-background:#d8d8d8;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #404040;
+    border-bottom: 2px solid #404040;
 
-box-shadow:
+    box-shadow: 1px 1px 0 #000;
 
-5px 5px 0px #000;
+    width: 100%;
 
-margin:25px auto;
+    margin-bottom: 20px;
 
-width:90%;
-
-max-width:900px;
-
-}
-
-.window-title{
-
-background:#000080;
-
-color:white;
-
-padding:6px;
-
-display:flex;
-
-justify-content:space-between;
-
-font-weight:bold;
+    overflow: hidden;
 
 }
 
-.window-body{
+.retro-title-bar {
 
-padding:20px;
+    background: linear-gradient(to right, #000080, #1084d0);
 
-color:black;
+    color: white;
 
-line-height:1.5;
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 4px 6px;
+
+    font-family: "Tahoma", sans-serif;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+}
+
+.retro-buttons {
+
+    display: flex;
+
+    gap: 3px;
+
+}
+
+.retro-buttons span {
+
+    width: 18px;
+
+    height: 18px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #c0c0c0;
+
+    color: black;
+
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid #404040;
+    border-bottom: 2px solid #404040;
+
+    cursor: default;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+}
+
+.retro-body {
+
+    background: #d4d0c8;
+
+    padding: 16px;
+
+    color: black;
+
+    min-height: 120px;
 
 }

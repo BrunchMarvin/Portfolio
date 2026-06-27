@@ -1,88 +1,103 @@
-.hero {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  padding: 6rem 0;
-  text-align: center;
+.home-grid{
+
+    width:95%;
+
+    max-width:1400px;
+
+    margin:auto;
+
+    display:grid;
+
+    gap:20px;
+
+    grid-template-columns:250px 1fr 250px;
+
 }
 
-.hero h1 {
-  color: white;
-  font-size: 3rem;
-  margin-bottom: 1rem;
+.home-grid > :last-child{
+
+    grid-column:1 / 4;
+
 }
 
-.hero .tagline {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-  color: #ecf0f1;
+.quick-links{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
 }
 
-.cta-button {
-  background-color: #3498db;
-  padding: 1rem 2rem;
-  font-size: 1.1rem;
+.quick-links li{
+
+    margin-bottom:12px;
+
+    cursor:pointer;
+
 }
 
-.cta-button:hover {
-  background-color: #2980b9;
+.video-placeholder{
+
+    height:320px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#222;
+
+    color:white;
+
+    border:2px dashed white;
+
 }
 
-/* Intro Section */
-.intro {
-  padding: 4rem 0;
-  background-color: #f8f9fa;
+.sidebar-buttons {
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
 }
 
-.intro h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
+.sidebar-button {
+
+    display:block;
+
+    padding:10px;
+
+    background:#d4d0c8;
+
+    border-top:2px solid white;
+    border-left:2px solid white;
+    border-right:2px solid #404040;
+    border-bottom:2px solid #404040;
+
+    color:black;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
 }
 
-.intro p {
-  text-align: center;
-  font-size: 1.1rem;
-  max-width: 600px;
-  margin: 0 auto 3rem;
-  color: #555;
+.sidebar-button:hover {
+
+    background:#e8e8e8;
+
 }
 
-.stats {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
+.sidebar-button:active {
 
-.stat {
-  background: white;
-  padding: 2rem;
-  border-radius: 8px;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
+    border-top:2px solid #404040;
+    border-left:2px solid #404040;
+    border-right:2px solid white;
+    border-bottom:2px solid white;
 
-.stat h3 {
-  font-size: 2.5rem;
-  color: #667eea;
-  margin-bottom: 0.5rem;
-}
-
-.stat p {
-  color: #666;
-  font-size: 1rem;
-}
-
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .hero .tagline {
-    font-size: 1.1rem;
-  }
-
-  .stats {
-    grid-template-columns: 1fr;
-  }
 }

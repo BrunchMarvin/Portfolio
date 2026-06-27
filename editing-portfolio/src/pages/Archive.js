@@ -1,7 +1,7 @@
 import React from 'react';
-import './Blog.css';
+import './Archive.css';
 
-function Blog() {
+function Archive() {
   const posts = [
     {
       id: 1,
@@ -34,14 +34,14 @@ function Blog() {
   ];
 
   return (
-    <div className="blog">
+    <div className="Archive">
       <div className="container">
-        <h1>Blog</h1>
+        <h1>Archive</h1>
         <p className="intro-text">Writing tips, editing advice, and industry insights</p>
 
-        <div className="blog-posts">
+        <div className="Archive-posts">
           {posts.map((post) => (
-            <article key={post.id} className="blog-card">
+            <article key={post.id} className="Archive-card">
               <h3><a href={`#post-${post.id}`}>{post.title}</a></h3>
               <div className="post-meta">
                 <span className="date">{post.date}</span>
@@ -57,4 +57,4 @@ function Blog() {
   );
 }
 
-export default Blog;
+export default Archive;

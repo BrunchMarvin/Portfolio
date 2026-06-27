@@ -1,0 +1,67 @@
+.site-banner{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin:20px;
+
+}
+
+.banner-window{
+
+    width:90%;
+
+    max-width:1000px;
+
+    background:#d4d0c8;
+
+    border-top:3px solid white;
+
+    border-left:3px solid white;
+
+    border-right:3px solid #444;
+
+    border-bottom:3px solid #444;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+.banner-window h1{
+
+    margin:0;
+
+    font-size:42px;
+
+    color:#000080;
+
+    text-shadow:2px 2px white;
+
+}
+
+.tagline{
+
+    margin-top:10px;
+
+    color:black;
+
+    font-weight:bold;
+
+}
+
+.banner-status{
+
+    margin-top:20px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    font-size:14px;
+
+    color:#333;
+
+}

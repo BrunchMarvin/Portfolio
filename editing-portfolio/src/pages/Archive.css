@@ -1,8 +1,8 @@
-.blog {
+.Archive {
   padding: 2rem 0;
 }
 
-.blog h1 {
+.Archive h1 {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 1rem;
@@ -15,13 +15,13 @@
   margin-bottom: 3rem;
 }
 
-.blog-posts {
+.Archive-posts {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 2rem;
 }
 
-.blog-card {
+.Archive-card {
   background: white;
   border-radius: 8px;
   padding: 2rem;
@@ -29,20 +29,20 @@
   transition: box-shadow 0.3s ease;
 }
 
-.blog-card:hover {
+.Archive-card:hover {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
-.blog-card h3 {
+.Archive-card h3 {
   font-size: 1.4rem;
   margin-bottom: 1rem;
 }
 
-.blog-card h3 a {
+.Archive-card h3 a {
   color: #2c3e50;
 }
 
-.blog-card h3 a:hover {
+.Archive-card h3 a:hover {
   color: #667eea;
   text-decoration: none;
 }
@@ -63,7 +63,7 @@
   color: #667eea;
 }
 
-.blog-card p {
+.Archive-card p {
   color: #555;
   line-height: 1.6;
   margin-bottom: 1rem;
@@ -81,11 +81,11 @@
 }
 
 @media (max-width: 768px) {
-  .blog h1 {
+  .Archive h1 {
     font-size: 1.8rem;
   }
 
-  .blog-posts {
+  .Archive-posts {
     grid-template-columns: 1fr;
   }
 

@@ -1,0 +1,15 @@
+.marquee-bar {
+
+    background: navy;
+
+    color: #00ff00;
+
+    font-weight: bold;
+
+    padding: 8px;
+
+    border-top: 2px solid white;
+
+    border-bottom: 2px solid white;
+
+}

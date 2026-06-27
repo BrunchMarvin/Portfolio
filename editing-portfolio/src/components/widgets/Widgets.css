@@ -1,0 +1,25 @@
+.status-widget p{
+
+    margin-bottom:16px;
+
+    line-height:1.4;
+
+}
+
+.green-light{
+
+    display:inline-block;
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:#00ff00;
+
+    box-shadow:0 0 8px lime;
+
+    margin-right:8px;
+
+}
