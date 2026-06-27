@@ -129,6 +129,8 @@ Your site will be live at: `https://YOUR_USERNAME.github.io/editing-portfolio`
 ```
 editing-portfolio/
 ├── public/
+│   ├── images/           (portfolio & project images)
+│   ├── icons/            (SVG icons & favicons)
 │   └── index.html
 ├── src/
 │   ├── pages/
@@ -137,12 +139,19 @@ editing-portfolio/
 │   │   ├── Services.js & Services.css
 │   │   ├── Blog.js & Blog.css
 │   │   └── Contact.js & Contact.css
+│   ├── images/           (component-specific images)
 │   ├── App.js
 │   ├── App.css
 │   └── index.js
 ├── package.json
 └── README.md
 ```
+
+### Asset Folders
+
+- **`public/images/`** - Static portfolio images (profile, projects, testimonials)
+- **`public/icons/`** - SVG icons and favicon variants
+- **`src/images/`** - Images imported directly into React components
 
 ## Tips for Content
 
