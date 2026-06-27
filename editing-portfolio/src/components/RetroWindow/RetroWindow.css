@@ -1,0 +1,43 @@
+.window{
+
+border:2px solid black;
+
+background:#d8d8d8;
+
+box-shadow:
+
+5px 5px 0px #000;
+
+margin:25px auto;
+
+width:90%;
+
+max-width:900px;
+
+}
+
+.window-title{
+
+background:#000080;
+
+color:white;
+
+padding:6px;
+
+display:flex;
+
+justify-content:space-between;
+
+font-weight:bold;
+
+}
+
+.window-body{
+
+padding:20px;
+
+color:black;
+
+line-height:1.5;
+
+}

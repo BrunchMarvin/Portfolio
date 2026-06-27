@@ -1,0 +1,22 @@
+body{
+
+background:#08101d;
+
+background-image:
+repeating-linear-gradient(
+45deg,
+transparent 0px,
+transparent 4px,
+rgba(255,255,255,.03) 5px,
+transparent 6px
+);
+
+color:white;
+
+margin:0;
+
+overflow-x:hidden;
+
+cursor:crosshair;
+
+}
