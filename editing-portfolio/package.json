@@ -2,7 +2,7 @@
   "name": "editing-portfolio",
   "version": "1.0.0",
   "description": "Professional editing portfolio website",
-  "homepage": "https://BrunchMarvin.github.io/editing-portfolio",
+  "homepage": "https://brunchmarvin.github.io/Portfolio/editing-portfolio",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",
