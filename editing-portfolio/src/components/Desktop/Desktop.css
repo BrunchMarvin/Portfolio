@@ -1,0 +1,101 @@
+.desktop{
+
+    width:100vw;
+    height:100vh;
+
+    background:#008080;
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+.desktop-icons{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+    padding:18px;
+
+}
+
+.desktop-icon{
+
+    width:80px;
+
+    text-align:center;
+
+    color:white;
+
+    cursor:pointer;
+
+    user-select:none;
+
+    font-family:Tahoma;
+
+}
+
+.desktop-icon:hover{
+
+    background:rgba(0,0,120,.4);
+
+}
+
+.desktop-icon span{
+
+    display:block;
+
+    margin-top:6px;
+
+}
+
+.desktop {
+    position: relative;
+
+    width: 100%;
+    height: calc(100vh - 40px);
+
+    background-color: #008080;
+
+    background-image: url("../assets/wallpaper.png");
+
+    background-repeat: no-repeat;
+
+    background-position: center;
+
+    background-size: cover;
+}
+
+.desktop-icon{
+
+    width:80px;
+
+    color:white;
+
+    text-align:center;
+
+    margin:20px;
+
+    cursor:pointer;
+
+    user-select:none;
+
+}
+
+.desktop-image{
+
+    font-size:38px;
+
+    margin-bottom:8px;
+
+}
+
+.desktop-icon:hover{
+
+    background:rgba(255,255,255,.15);
+
+}

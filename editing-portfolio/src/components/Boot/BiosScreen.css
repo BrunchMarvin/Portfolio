@@ -1,0 +1,145 @@
+/* Entire Screen */
+
+.bios-screen{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#000;
+
+    color:#00ff55;
+
+    font-family:"Courier New", monospace;
+
+    font-size:18px;
+
+    overflow:hidden;
+
+}
+
+
+/* Main Text */
+
+.bios-content{
+
+    position:relative;
+
+    padding:30px;
+
+    z-index:2;
+
+    white-space:pre-wrap;
+
+    text-shadow:
+        0 0 3px #00ff00,
+        0 0 6px #00ff00,
+        0 0 12px #008800;
+
+}
+
+
+/* CRT Scanlines */
+
+.bios-screen::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    repeating-linear-gradient(
+
+        transparent 0px,
+
+        transparent 2px,
+
+        rgba(0,0,0,.28) 3px,
+
+        rgba(0,0,0,.28) 4px
+
+    );
+
+    pointer-events:none;
+
+    z-index:3;
+
+}
+
+
+/* Soft CRT Glow */
+
+.bios-screen::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    radial-gradient(
+
+        circle,
+
+        transparent 45%,
+
+        rgba(0,0,0,.35) 100%
+
+    );
+
+    pointer-events:none;
+
+}
+
+
+/* Cursor */
+
+.cursor{
+
+    display:inline-block;
+
+    width:10px;
+
+    animation:blink 1s infinite;
+
+}
+
+
+@keyframes blink{
+
+    50%{
+
+        opacity:0;
+
+    }
+
+}
+
+
+/* Very subtle monitor flicker */
+
+@keyframes flicker{
+
+    0%{opacity:.985;}
+
+    25%{opacity:1;}
+
+    50%{opacity:.99;}
+
+    75%{opacity:.995;}
+
+    100%{opacity:1;}
+
+}
+
+
+.bios-content{
+
+    animation:flicker .18s infinite;
+
+}

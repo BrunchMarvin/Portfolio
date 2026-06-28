@@ -1,0 +1,27 @@
+.splash-screen{
+    width:100vw;
+    height:100vh;
+
+    background:#000080;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+    font-family:Tahoma, sans-serif;
+
+    overflow:hidden;
+}
+
+.splash-screen h1{
+    margin:0;
+    font-size:42px;
+    font-weight:bold;
+}
+
+.splash-screen p{
+    margin-top:25px;
+    font-size:18px;
+}

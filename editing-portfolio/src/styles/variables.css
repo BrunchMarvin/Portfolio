@@ -1,23 +1,16 @@
-:root{
+:root {
+  --bg-color: #0b1024;
+  --window-bg: #d4d0c8;
+  --window-title: #000080;
+  --window-border: #000000;
 
---bg:#08101d;
---window:#d8d8d8;
---border:#000;
---title:#000080;
---titleText:white;
+  --text: #000;
+  --white: #fff;
 
---text:black;
+  --link: #0000ee;
+  --visited: #551a8b;
 
---link:#0000ee;
+  --shadow: #222;
 
---visited:#551a8b;
-
---green:#00ff00;
-
---red:#ff0000;
-
---yellow:#ffff00;
-
-font-family:Tahoma,Verdana,sans-serif;
-
+  --font-main: Tahoma, Verdana, sans-serif;
 }

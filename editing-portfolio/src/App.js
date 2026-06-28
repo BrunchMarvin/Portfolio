@@ -1,59 +1,62 @@
-import React from 'react';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import "./App.css";
+
+// Boot "Fake Windows Booting Sequence"
+import BootManager from "./components/Boot/BootManager";
+
+// Desktop Components
+import SiteBanner from "./components/SiteBanner/SiteBanner";
+import MarqueeBar from "./components/MarqueeBar/MarqueeBar";
 import Taskbar from "./components/Taskbar/Taskbar";
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import './App.css';
-import MarqueeBar from './components/MarqueeBar/MarqueeBar';
-import Home from './pages/Home';
-import Portfolio from './pages/Portfolio';
-import Services from './pages/Services';
-import Archive from './pages/Archive';
-import Contact from './pages/Contact';
-import SiteBanner from './components/SiteBanner/SiteBanner';
+
+// Pages
+import Desktop from "./components/Desktop/Desktop";
+import Home from "./pages/Home";
+import Portfolio from "./pages/Portfolio";
+import Services from "./pages/Services";
+import Archive from "./pages/Archive";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
-      <div className="App">
-    <SiteBanner />
-    <MarqueeBar />
-      {/**<nav className="retro-nav">
-          <div className="container">
-            <Link to="/" className="logo">
+    <BootManager>
+      <Router basename={process.env.PUBLIC_URL}>
+        <div className="App">
 
-            </Link>
-            <ul className="nav-links">
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/portfolio">Portfolio</Link></li>
-              <li><Link to="/services">Services</Link></li>
-              <li><Link to="/Archive">Archive</Link></li>
-              <li><Link to="/contact">Contact</Link></li>
-            </ul>
-          </div>
-        </nav>*/}
+          {/* Banner */}
+          {/* <SiteBanner /> */}
 
-        <main className="main-content">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/Archive" element={<Archive />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </main>
+          {/* News Ticker */}
+        {/*<MarqueeBar />*/}
 
-        <footer className="footer">
-          <div className="container">
-            <p>&copy; HAHAHHAHAHAHHAHHAHHA</p>
-            <div className="social-links">
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+          {/* Main Desktop Area */}
+          <main className="main-content">
+
+            <Routes>
+              <Route path="/" element={<Desktop />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/archive" element={<Archive />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+
+          </main>
+
+          {/* Footer (Temporary) */}
+       {/*<footer className="footer">
+            <div className="container">
+              <p>© Property of The Munch Bunch 2026. We are not responsible for any content on this website, damange to your property and or memetic hazards that may cause your brain to EXPLODE!</p>
             </div>
-          </div>
-        </footer>
-      </div>
-      <Taskbar />
-    </Router>
+         </footer>
+
+          {/* Windows Taskbar */}
+          <Taskbar />
+
+        </div>
+      </Router>
+    </BootManager>
   );
 }
 
